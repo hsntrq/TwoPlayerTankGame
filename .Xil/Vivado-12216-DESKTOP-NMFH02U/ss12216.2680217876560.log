@@ -1,0 +1,33 @@
+srcscan starts
+INFO: analyzing module debouncer (VERI-9002)
+INFO: analyzing module PS2Receiver (VERI-9002)
+INFO: analyzing module clk_div (VERI-9002)
+INFO: analyzing module h_counter (VERI-9002)
+INFO: analyzing module v_counter (VERI-9002)
+INFO: analyzing module vga_sync (VERI-9002)
+INFO: analyzing module startscreen (VERI-9002)
+INFO: analyzing module p1screen (VERI-9002)
+INFO: analyzing module p2screen (VERI-9002)
+INFO: analyzing module crown (VERI-9002)
+INFO: analyzing module coin (VERI-9002)
+INFO: analyzing module maze (VERI-9002)
+INFO: analyzing module Fire1 (VERI-9002)
+INFO: analyzing module FSM_move (VERI-9002)
+INFO: analyzing module tank1 (VERI-9002)
+INFO: analyzing module tank2 (VERI-9002)
+INFO: analyzing module FSM_screen (VERI-9002)
+INFO: analyzing module pixel_gen (VERI-9002)
+INFO: analyzing module vga_controller (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:coin
+VeriTop library:xil_defaultlib mod:FSM_move
+VeriTop library:xil_defaultlib mod:FSM_screen
+VeriTop library:xil_defaultlib mod:vga_controller
+END of tops
+C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v(339): INFO: compiling module 'coin_default' (VERI-1018)
+C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v(462): INFO: compiling module 'FSM_move_default' (VERI-1018)
+C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v(828): INFO: compiling module 'FSM_screen_default' (VERI-1018)
+C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v(1020): INFO: compiling module 'vga_controller_default' (VERI-1018)
+ModName: debouncer(COUNT_MAX=19,COUNT_WIDTH=5)
+BaseName debouncer has 1 entries
+srcscan exits with return value 0

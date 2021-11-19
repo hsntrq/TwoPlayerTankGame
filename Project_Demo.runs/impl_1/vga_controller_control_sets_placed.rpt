@@ -1,0 +1,106 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Dec 13 19:27:18 2020
+| Host         : DESKTOP-NMFH02U running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_controller_control_sets_placed.rpt
+| Design       : vga_controller
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   125 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              85 |           35 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              42 |           20 |
+| Yes          | No                    | No                     |              43 |           21 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              41 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+--------------------------------------+--------------------------------+------------------+----------------+--------------+
+|       Clock Signal       |             Enable Signal            |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------+--------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG           | keyboard/db_clk/clear                |                                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           | keyboard/db_clk/O_i_1_n_0            |                                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           | keyboard/db_data/Iv_i_1__0_n_0       |                                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG           | keyboard/db_data/O_i_1__0_n_0        |                                |                1 |              1 |         1.00 |
+|  clk_d_OBUF_BUFG         |                                      | q/t1/t1/SR[0]                  |                1 |              1 |         1.00 |
+|  clk_d_OBUF_BUFG         |                                      | q/green[1]_i_1_n_0             |                1 |              1 |         1.00 |
+|  clk_d_OBUF_BUFG         |                                      | q/red[3]_i_1_n_0               |                3 |              3 |         1.00 |
+| ~keyboard/db_clk/O_reg_0 | keyboard/cnt                         | keyboard/cnt[3]_i_1_n_0        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           | keyboard/keys_1_1                    |                                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG           | keyboard/keys_2_0                    |                                |                1 |              4 |         4.00 |
+|  clk_d_OBUF_BUFG         |                                      |                                |                4 |              4 |         1.00 |
+|  animate                 | keyboard/reset_reg_11[0]             | keyboard/reset_reg_14          |                3 |              4 |         1.33 |
+|  animate                 | keyboard/reset_reg_10[0]             |                                |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG           | keyboard/db_data/count[4]_i_1__0_n_0 | keyboard/db_data/Iv_i_1__0_n_0 |                2 |              5 |         2.50 |
+|  animate                 | keyboard/E[0]                        |                                |                3 |              5 |         1.67 |
+|  animate                 | keyboard/E[0]                        | q/reset                        |                3 |              5 |         1.67 |
+|  animate                 | keyboard/reset_reg_11[0]             |                                |                4 |              6 |         1.50 |
+|  animate                 | keyboard/reset_reg_10[0]             | q/reset                        |                4 |              6 |         1.50 |
+|  clk_d_OBUF_BUFG         |                                      | r/h_count_reg[6]_1             |                3 |              7 |         2.33 |
+|  animate                 | keyboard/reset_reg_9                 | keyboard/reset_reg_12          |                4 |              7 |         1.75 |
+| ~keyboard/db_clk/O_reg_0 |                                      |                                |                3 |              9 |         3.00 |
+|  clk_d_OBUF_BUFG         |                                      | r/h_count[9]_i_1_n_0           |                5 |             10 |         2.00 |
+|  clk_d_OBUF_BUFG         |                                      | g/p1wincheck0                  |                3 |             10 |         3.33 |
+|  clk_d_OBUF_BUFG         | g/v_count0                           | g/v_count[9]_i_1_n_0           |                6 |             10 |         1.67 |
+|  animate                 |                                      | q/counter[9]_i_1_n_0           |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG           |                                      |                                |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG           | keyboard/LED0                        |                                |                5 |             16 |         3.20 |
+|  animate                 |                                      |                                |               22 |             60 |         2.73 |
++--------------------------+--------------------------------------+--------------------------------+------------------+----------------+--------------+
+
+

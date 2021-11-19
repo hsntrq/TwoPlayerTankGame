@@ -1,0 +1,148 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec  9 14:08:25 2020
+# Process ID: 3956
+# Current directory: E:/OneDrive - Habib University/Desktop/Project_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1548 E:\OneDrive - Habib University\Desktop\Project_Demo\Project_Demo.xpr
+# Log file: E:/OneDrive - Habib University/Desktop/Project_Demo/vivado.log
+# Journal file: E:/OneDrive - Habib University/Desktop/Project_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1025.117 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1025.117 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A4DA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2215.008 ; gain = 1189.891
+set_property PROGRAM.FILE {E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.runs/impl_1/vga_controller.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.runs/impl_1/vga_controller.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: vga_controller
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2773.598 ; gain = 250.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:944]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:49]
+	Parameter div_value bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:49]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/keyboard_input.v:43]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/keyboard_input.v:21]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/keyboard_input.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/keyboard_input.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (3#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/keyboard_input.v:43]
+INFO: [Synth 8-6157] synthesizing module 'h_counter' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'h_counter' (4#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:75]
+INFO: [Synth 8-6157] synthesizing module 'v_counter' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'v_counter' (5#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:101]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:122]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (6#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:122]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:807]
+	Parameter start bound to: 0 - type: integer 
+	Parameter game bound to: 1 - type: integer 
+	Parameter p1 bound to: 2 - type: integer 
+	Parameter p2 bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'startscreen' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'startscreen' (7#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:150]
+INFO: [Synth 8-6157] synthesizing module 'p1screen' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'p1screen' (8#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:195]
+INFO: [Synth 8-6157] synthesizing module 'p2screen' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:241]
+INFO: [Synth 8-6155] done synthesizing module 'p2screen' (9#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:241]
+INFO: [Synth 8-6157] synthesizing module 'maze' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'maze' (10#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:314]
+INFO: [Synth 8-6157] synthesizing module 'tank1' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:467]
+INFO: [Synth 8-6157] synthesizing module 'Fire1' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:359]
+WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:394]
+WARNING: [Synth 8-6090] variable 'y_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:397]
+WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:400]
+WARNING: [Synth 8-6090] variable 'x_pos' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:403]
+INFO: [Synth 8-6155] done synthesizing module 'Fire1' (11#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:359]
+INFO: [Synth 8-6155] done synthesizing module 'tank1' (12#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:467]
+INFO: [Synth 8-6157] synthesizing module 'tank2' [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:640]
+INFO: [Synth 8-6155] done synthesizing module 'tank2' (13#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:640]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (14#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:807]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (15#1) [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/sources_1/new/vga_controller.v:944]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2824.008 ; gain = 300.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2841.875 ; gain = 318.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2841.875 ; gain = 318.691
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2841.875 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [E:/OneDrive - Habib University/Desktop/Project_Demo/Project_Demo.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2946.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2946.984 ; gain = 423.801
+35 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2946.984 ; gain = 691.797
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 15:37:20 2020...

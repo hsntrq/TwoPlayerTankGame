@@ -1,0 +1,139 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 17808
+License: Customer
+
+Current time: 	Mon Feb 22 12:32:26 PKT 2021
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Student
+User home directory: C:/Users/Student
+User working directory: C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Student/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Student/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Student/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/vivado.log
+Vivado journal file location: 	C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/vivado.jou
+Engine tmp dir: 	C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/.Xil/Vivado-17808-DESKTOP-NMFH02U
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	133 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,010 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 269ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5376 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1668 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  2713 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Student\OneDrive - Habib University\Desktop\TBA\Project_Demo\Final\Project_Demo\Project_Demo.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 48 MB. Current time: 2/22/21, 12:32:39 PM PKT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: open_project {C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/Project_Demo.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo/Project_Demo.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo' INFO: [Project 1-313] Project file moved from 'C:/Users/Student/Desktop/Project_Demo' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// WARNING: HEventQueue.dispatchEvent() is taking  3050 ms.
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 78 MB (+78791kb) [00:02:33]
+// [Engine Memory]: 1,010 MB (+907065kb) [00:02:33]
+// [GUI Memory]: 103 MB (+22124kb) [00:02:38]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5068 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1177 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1671 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  2070 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:01:22 . Memory (MB): peak = 1024.578 ; gain = 0.000 
+// Project name: Project_Demo; location: C:/Users/Student/OneDrive - Habib University/Desktop/TBA/Project_Demo/Final/Project_Demo; part: xc7a35tcpg236-1
+// WARNING: HEventQueue.dispatchEvent() is taking  1059 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1583 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1592ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1592 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 20558 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1180 ms.
+dismissDialog("Open Project"); // bz (cs)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9409 ms. Increasing delay to 28227 ms.
+// [GUI Memory]: 112 MB (+4566kb) [00:03:38]
+// WARNING: HEventQueue.dispatchEvent() is taking  4660 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 3290ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3290 ms.
+// WARNING: updateGUI() is taking  1770 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1835 ms.
